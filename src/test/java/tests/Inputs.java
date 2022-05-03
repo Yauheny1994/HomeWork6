@@ -22,13 +22,13 @@ public class Inputs {
         driver.get("http://the-internet.herokuapp.com/inputs");
     }
 
-    @Test
-    public void InputsNumbersTest() {
-        inputNumbers = "1234567890";
-        driver.findElement(By.tagName("input")).sendKeys(inputNumbers);
-        String actualNumbers = driver.findElement(By.tagName("input")).getAttribute("value");
-        Assert.assertEquals(actualNumbers, inputNumbers);
-    }
+//    @Test
+//    public void InputsNumbersTest() {
+//        inputNumbers = "1234567890";
+//        driver.findElement(By.tagName("input")).sendKeys(inputNumbers);
+//        String actualNumbers = driver.findElement(By.tagName("input")).getAttribute("value");
+//        Assert.assertEquals(actualNumbers, inputNumbers);
+//    }
 
     @Test
     public void InputsTextTest() {
